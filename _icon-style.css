@@ -1,0 +1,545 @@
+
+#collection-5b3277c62b6a28ad4c30d7f8 form{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+/* saved default elements */
+.form-wrapper{
+    position:relative;
+    min-height: 500px;
+/*     height: 100%; */
+    margin-bottom: 100px;
+}
+
+.form-inner-wrapper{
+    position:relative;
+    min-height: 500px;
+/* 	height: 100%; */
+    margin-bottom: 100px;
+	
+}
+
+form{
+    position:relative;
+    min-height: 500px;
+/*     height: 100%; */
+    margin-bottom: 100px;
+}
+
+.field-list .form-item{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.field-list .form-item.field{
+    top:0px;
+    transition: .3s;
+    padding: 20px;
+    width: 100%;
+    background:transparent;
+    opacity: 1;
+    text-align:center;
+	box-sizing: border-box;
+	min-height: 500px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+.form-button-wrapper{
+	border:1px solid grey;
+	/* min-height: 500px; */
+	height: 100%;
+	position:relative;
+}
+
+
+
+.form-button-wrapper input{
+	width: 60%;
+	height: 30px;
+	margin-bottom: 25px;
+	margin-left: 18%;
+	display: inline-block;
+	
+}
+
+.form-button-wrapper input.sqs-system-button{
+	position:absolute;
+	display:flex !important;
+	justify-content:center;
+	align-items:center;
+	right:0%;
+	padding: 0px !important;
+	width: 50% !important;
+	height: 40px !important;
+	top: 100%;
+	background: rgba(200, 100, 50, .7) !important;
+	font-weight:bold !important;
+	border:1px solid rgb(200, 100, 50) !important;
+}
+.form-button-wrapper input:hover{
+
+}
+
+.form-button-wrapper .pef-nav{
+	pointer-events:none;
+}
+.form-button-wrapper .pef-nav>div{
+	pointer-events:initial
+}
+
+
+
+
+
+
+
+/* hidden default elements */
+
+.form-item .option, .form-item .description, .form-item .title{
+	position:absolute;
+}
+.field-list .form-item .option{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	overflow:hidden
+}
+.field-list .form-item .description{
+	width: 0px;
+	height: 0px;
+	overflow:hidden
+}
+.field-list .form-item .title{
+	width: 0px;
+	height: 0px;
+	overflow:hidden
+}
+.field-list .form-item .option input{
+	display:inline-block;	
+	width: 0px;
+	height: 0px;
+	overflow:hidden
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* new elements */
+
+.pef-nav{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	left:0;
+	top: 100%;
+}
+
+.pef-nav>div{
+	cursor: pointer;
+	border: 1px solid rgb(110, 155, 75);
+	width: 50%;
+	height: 40px;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	font-weight: 400;
+	padding-bottom: 5px;
+	user-select:none;
+	background: white;
+	background: rgb(170, 200, 100);
+	font-size: 1rem;
+	box-sizing:border-box;
+	letter-spacing: 2px;
+}
+
+.pef-forward{
+	float:right;
+}
+
+.pef-nav>div:hover, .form-button-wrapper input:hover{
+	opacity: .7 !important;
+}
+
+.pef-back{
+	float:left;
+}
+
+.pef-hidden{
+	position:absolute !important;
+	opacity: 0 !important;
+	pointer-events: none !important
+}
+
+.pef-hidden .pef-nav>div{
+	pointer-events:none !important
+}
+
+.pef-step-visuals{
+	position:relative;
+	width: 100%;
+}
+
+.pef-visual{
+	transition: .2s;
+	position:relative;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 33%;
+	margin-bottom: 50px;
+	padding: 0 1%;
+	box-sizing: border-box;
+}
+
+#pef-step-Styles .pef-visual{
+	max-width: 100%;
+}
+
+.pef-visual img{
+	box-sizing:border-box;
+	border: 2px solid transparent;
+	opacity: .7;
+	cursor:pointer;
+	transition: .2s;
+}
+
+.pef-visual img:hover{
+	transform: translate(0, -5px);
+	opacity: 1;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+.pef-slider-step .pef-visual img{
+	cursor: initial;
+}
+
+.pef-slider-step .pef-visual img:hover{
+	box-shadow: none;
+	transform: none;
+}
+
+.pef-step-visuals img{
+	max-width: 100%;
+	height:auto;
+	
+}
+
+.pef-visual-desc{
+	text-align: center;
+	width: 100%;
+	padding: 5px 0;
+}
+
+
+
+
+.pef-slider-knob{
+	position:absolute;
+	z-index: 9;
+	pointer-events:none;
+	width: 10px;
+	height: 30px;
+	background: white;
+	box-shadow: 0px 0px 5px black;
+	top: -12px;
+	border-radius: 10px;
+}
+
+.pef-step-slider-wrap:hover .pef-slider-knob{
+	box-shadow: 0px 0px 15px black;	
+}
+
+
+.pef-step-slider-wrap{
+	height: 40px;
+	display:flex;
+	align-items:center;
+	cursor:pointer;
+}
+
+.pef-step-slider{
+	position:relative;
+	width: 100%;
+	height: 10px;
+	background: lightgrey;
+	margin: 40px 0;
+}
+
+.pef-step-slider-wrap:hover .pef-step-slider{
+	background: grey;
+}
+
+
+
+
+
+
+
+
+
+.pef-highlighted img{
+	opacity: 1;
+	border:2px solid blue;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+
+#pef-total-display{
+	text-align: left;
+	font-size:0px;
+	position:relative;
+	width:100%;
+	height: 100%;
+}
+
+#pef-total-display>div{
+	box-sizing:border-box;
+	vertical-align:top;
+	padding:20px;
+	margin: 0px;
+	font-size: 1rem;
+	width: 50%;
+	display:inline-block;
+}
+
+.pef-totals-option{
+	font-size: .8rem;
+}
+
+.pef-totals-title{
+	font-weight:bold
+}
+
+#pef-total-display .pef-form-total{
+	width:100%;
+	display:block;
+	text-align:right;
+	bottom: 40px;
+	font-size: 1.4rem;
+}
+
+
+
+.pef-step-title{
+	font-size: 1.5rem;
+}
+.pef-step-desc{
+	margin:30px 0;
+}
+
+
+
+
+
+
+
+
+/* for entire steps with slider */
+.pef-slider-step{
+	user-select:none;
+}
+
+.pef-slider-step .pef-visual{
+	max-width: 100%;
+	width: 100%;
+	left: 0;
+}
+
+.pef-slider-step .pef-visual-desc{
+	font-size: 1.2rem;
+	padding-top: 30px;
+	box-sizing:border-box;
+	background: none
+}
+
+.pef-slider-step img{
+	opacity: 1
+}
+
+
+.pef-hidden-visual{
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.pef-form-prompt{
+	width: 100% !important;
+	left: 0px;
+	margin-top: -50px;
+}
+
+
+.pef-prompt-bg{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 100%;
+	left: 0px;
+	overflow:hidden;
+}
+
+.pef-prompt-bg h3{
+
+}
+
+.pef-prompt-bg img{
+	opacity: 1;
+	margin-bottom: -50px;
+}
+
+#pef-final-email{
+	display:inline-block;
+	padding: 10px 20px;
+	font-weight: bold;
+	background: rgb(110, 155, 75);
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+#pef-final-email a{
+/* 	background: green */
+	color: white;
+}
+
+.form-button-wrapper .pef-back{
+	background: white;
+	color: grey;
+	opacity: .7;
+}
+
+#pef-copy{
+	position: absolute;
+	pointer-events: none;
+	opacity: 0;
+}
+
+
+.pef-final-header{
+	display: block !important
+}
+
+.pef-slider-instruct{
+	font-size:.9em;
+	margin-bottom: 15px;
+}
+
+#pef-step-Elements .pef-visual img{
+	background: white;
+}
+
+.pef-notch{
+	position: absolute;
+	height: 100%;
+	border-right: 2px solid grey;
+	top: 100%;
+}
+
+
+
+
+
+
+.pef-slider-input {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+.pef-slider-input:focus {
+  outline: none;
+}
+.pef-slider-input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: grey;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+.pef-slider-input::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 36px;
+  border-radius: 35px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+.pef-slider-input:focus::-webkit-slider-runnable-track {
+  background: #lightgrey;
+}
+.pef-slider-input::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: grey;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+.pef-slider-input::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 36px;
+  border-radius: 36px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.pef-slider-input::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+.pef-slider-input::-ms-fill-lower {
+  background: #lightgrey;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.pef-slider-input::-ms-fill-upper {
+  background: grey;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.pef-slider-input::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 36px;
+  border-radius: 36px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.pef-slider-input:focus::-ms-fill-lower {
+  background: grey;
+}
+.pef-slider-input:focus::-ms-fill-upper {
+  background: #lightgrey;
+}

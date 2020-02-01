@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+				
+		var x = 0
+
+		go().then(function(res){
+			document.write(res)
+		}).catch(function(err){
+			document.write(err)
+		})
+
+		
+
+		function go(){
+			// document.write('beginning: ' + x)
+			console.log('beginning: ' + x)
+			return new Promise(function(resolve, reject){
+
+				for(i=0;i<1000000000;i++){
+					x=i
+				}
+				resolve('score')
+			})
+		}
+
+	</script>
+
+</body>
+</html>
