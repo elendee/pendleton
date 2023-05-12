@@ -225,6 +225,9 @@ form{
 .pef-slider-step .pef-visual img{
 	cursor: initial;
 }
+.pef-step-name-elements .pef-step-visuals img{
+	background: white;
+}
 
 .pef-slider-step .pef-visual img:hover{
 	box-shadow: none;
@@ -234,6 +237,7 @@ form{
 .pef-step-visuals img{
 	max-width: 100%;
 	height:auto;
+
 	
 }
 
